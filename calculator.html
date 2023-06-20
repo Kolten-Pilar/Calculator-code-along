@@ -3,55 +3,11 @@
   <head>
     <title>Calculator</title>
     <!-- Everything below was followed along from YouTuber SuperSimpleDev before my classes began at PerScholas. The only thing I did by myself was the CSS styling. -->
-    <style>
+    <link rel="stylesheet" href="style.css">
 
-      p {
-          display: block;
-          margin-block-start: 1em;
-          margin-block-end: 1em;
-          margin-inline-start: 0px;
-          margin-inline-end: 0px;
-      }
+      
 
-      body {
-        font-family: Arial;
-        background-color: rgba(0, 0, 0, 0.322);
-      }
-      .calc {
-        text-align: left;
-        font-size: 50px;
-        color: darkred;
-      }
-
-      .calcButton {
-        height: 60px;
-        width: 60px;
-        background-color: rgb(50, 97, 228);
-        font-size: 50px;
-        border-radius: 80px;
-        cursor: pointer;
-      }
-
-      .clear {
-        height: 60px;
-        width: 60px;
-        background-color: rgb(50, 97, 228);
-        font-size: 50px;
-        width: 250px;
-      }
-
-      .js-calculation {
-        
-        font-size: 65px;
-        background-color: lightcoral;
-        border-radius: 80px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        text-align: center;
-        margin-right: 1450px;
-      }
-
-    </style>
+    
   </head>
   <body>
     <p class= "calc">
@@ -192,31 +148,6 @@
       ">Clear</button> 
       </p>
       
-      <script>
-
-        // added an alert to show viewers my message
-        alert('Thank you for viewing! I followed along YouTuber SuperSimpleDev before any formal classes with PerScholas. The only thing I did myself was the CSS Styling')
-     
-      let calculation = localStorage.getItem('calculation') || '';
-
-      // Display the calculation when the page first loads.
-      displayCalculation();
-
-      function updateCalculation(value) {
-        calculation += value;
-
-        // Display the calculation on the page
-        // instead of console.log
-        displayCalculation();
-
-        localStorage.setItem('calculation', calculation);
-      }
-
-      function displayCalculation() {
-        document.querySelector('.js-calculation')
-          .innerHTML = calculation;
-      }
-
-    </script>
+      <scrip src="here.js"></script>
   </body>
 </html>
